@@ -1,0 +1,83 @@
+// Colors
+$body: #2C3038;
+$black: #000000;
+$black_text: rgba(#000000, 0.9);
+$gray_light: #e6e6e6;
+$gray: #666;
+$white: #FFFFFF;
+$blue: #3483fa;
+$blue_light: #0097D6;
+$blue_dark: #075782;
+
+// Mixins
+@mixin m360 {
+  @media (min-width: 359px) {
+    @content;
+  }
+}
+
+@mixin m450 {
+  @media (min-width: 449px) {
+    @content;
+  }
+}
+
+@mixin m576 {
+  @media (min-width: 575px) {
+    @content;
+  }
+}
+
+@mixin m600 {
+  @media (min-width: 599px) {
+    @content;
+  }
+}
+
+@mixin m768 {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin m900 {
+  @media (min-width: 889px) {
+    @content;
+  }
+}
+
+@mixin m992 {
+  @media (min-width: 991px) {
+    @content;
+  }
+}
+
+@mixin m1200 {
+  @media (min-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin m1300 {
+  @media (min-width: 1299px) {
+    @content;
+  }
+}
+
+@mixin m1400 {
+  @media (min-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin m1800 {
+  @media (min-width: 1799px) {
+    @content;
+  }
+}
+
+@mixin m2200 {
+  @media (min-width: 2199px) {
+    @content;
+  }
+}
