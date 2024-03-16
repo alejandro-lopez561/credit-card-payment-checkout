@@ -1,13 +1,8 @@
 <script setup>
 import Home from './views/Home.vue'
-import Product from './components/Product.vue'
+import "./sass/_base.scss";
 </script>
 
 <template>
   <Home />
-  <Product />
 </template>
-
-<style scoped>
-
-</style>
