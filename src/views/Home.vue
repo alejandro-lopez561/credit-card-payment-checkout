@@ -1,21 +1,14 @@
 <template>
-  <div class="home">
-    <div class="container">
-      <h1>
-        {{ title }}
-      </h1>
-    </div>
-  </div>
+  <Product />
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      title: "Hello World",
-    }
-  }
+import Product from '../components/Product.vue'
 
+export default {
+  components: {
+    Product,
+  },
 }
 </script>
 
