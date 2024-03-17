@@ -1,11 +1,8 @@
 <script setup>
 import Home from './views/Home.vue'
-import Product from './components/Product.vue'
-import CreditCard from './components/CreditCard.vue'
+import "./sass/_base.scss";
 </script>
 
 <template>
   <Home />
-  <Product />
-  <CreditCard />
 </template>

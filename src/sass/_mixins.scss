@@ -9,6 +9,9 @@ $blue: #3483fa;
 $blue_light: #0097D6;
 $blue_dark: #075782;
 
+$font_default: "Montserrat", sans-serif;;
+$font_size_base: 16px;
+
 // Mixins
 @mixin m360 {
   @media (min-width: 359px) {
