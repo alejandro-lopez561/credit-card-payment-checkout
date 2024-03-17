@@ -7,7 +7,3 @@ import Product from './components/Product.vue'
   <Home />
   <Product />
 </template>
-
-<style scoped>
-
-</style>
