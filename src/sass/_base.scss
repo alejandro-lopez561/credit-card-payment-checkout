@@ -1,0 +1,23 @@
+@import "_helpers.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  font-family: $font_default;
+  font-size: $font_size_base;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+ }
