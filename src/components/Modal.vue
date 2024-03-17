@@ -1,11 +1,11 @@
 <template>
-  <div class="modal fade show" id="js-modal" tabindex="-1" role="dialog" ref="modal">
+  <div class="modal fade show" id="js-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-js" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <button class="hamburger--collapse is-active close"
         type="button"
-        data-dismiss="modal"
+        data-bs-dismiss="modal"
         aria-label="Close"
-        @click="$emit('close-modal')">
+        @click.prevent="closeModal">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -26,10 +26,13 @@
 import $ from 'jquery';
 
 export default {
-  emits: ['close-modal'],
-  mounted() {
-    $('#js-modal').show();
-  }
+  methods: {
+    closeModal() {
+      $('#js-modal').hide();
+      $('body').removeClass('modal-open');
+      $('.modal-backdrop').remove();
+    }
+  },
 };
 </script>
 
