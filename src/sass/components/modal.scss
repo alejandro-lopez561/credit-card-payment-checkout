@@ -1,14 +1,11 @@
-.modal-backdrop {
+.modal {
+  z-index: 100;
+  padding-right: 0 !important;
   background-color: $black;
 
   &.show {
-    opacity: 0.85;
+    opacity: 0.90;
   }
-}
-
-.modal {
-  padding-right: 0 !important;
-  background-color: $body;
 
   .modal-dialog {
     max-width: none;
@@ -31,16 +28,33 @@
     display: inline-block;
     width: 40px;
     height: 40px;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-align: center;
     pointer-events: all;
     opacity: 1;
-    border: 2px solid $blue;
+    border: 1px solid $blue_dark;
     border-radius: 100%;
+    background-color: $blue_dark;
 
     &:hover {
-      opacity: 1 !important;
-      background-color: $blue;
+      // border: 2px solid $white;
+      background-color: $blue_light;
+
+      .hamburger-box {
+        transition: all 0.3s ease;
+        transform: rotate(180deg);
+        pointer-events: none;
+
+        .hamburger-inner {
+          pointer-events: all;
+          &,
+          &::after,
+          &::before {
+            background-color: $white;
+          }
+        }
+      }
     }
 
     &:focus {
